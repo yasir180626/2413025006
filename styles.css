@@ -1,0 +1,77 @@
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background: #111;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+section {
+    padding: 20px;
+}
+.typing-text {
+    display: inline-block;
+    font-size: 20px;
+    font-weight: bold;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 3px solid black; /* Simulasi kursor */
+    animation: typing 5s steps(30) infinite alternate, blink 0.10s infinite;
+}
+
+@keyframes typing {
+    from { width: 0; } /* Mulai dari kosong */
+    to { width: 100%; } /* Ketik hingga penuh */
+}
+
+@keyframes blink {
+    20% { border-color: transparent; } /* Kedipan kursor */
+}
+
+.project {
+    border: 5px solid #ccc;
+    margin: 10px 0;
+    padding: 10px;
+}
+.center-text {
+            text-align: center;
+        }
+ .project {
+    border: 1px solid black; /* Ukuran border kecil (1px) */
+    padding: 10px; /* Spasi di dalam border */
+    margin: 10px 0; /* Jarak antar proyek */
+    border-radius: 5px; /* Membuat sudut border sedikit melengkung */
+    text-align: center; /* Menengahkan teks */
+}
+
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background: #333;
+    color: #fff;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
