@@ -3,14 +3,35 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portofolio yasir</title>
+    <title>Portofolio Yasir</title>
     <link rel="stylesheet" href="styles.css">
+    <style>
+        .project-container {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+
+        .project {
+            border: 1px solid black;
+            padding: 10px;
+            margin: 10px;
+            border-radius: 5px;
+            text-align: center;
+            flex: 1 1 calc(45% - 20px); /* Adjust width and spacing */
+            box-sizing: border-box; /* Include padding and border in width */
+        }
+
+        @media (max-width: 600px) {
+            .project {
+                flex: 1 1 100%; /* Stack projects on smaller screens */
+            }
+        }
+    </style>
 </head>
 <body>
     <header>
         <h1>MUHAMAD YASIR</h1>
-        <p>
-           
         <nav>
             <ul>
                 <li><a href="https://yasir180626.github.io/2413025006/">Home</a></li>
@@ -25,64 +46,64 @@
         <h2>Tentang Saya</h2>
         <h2>Nama: Muhamad Yasir</h2>
         <h2>Program Studi: Teknologi Informasi</h2>
-        <h2> Kelas: 2024B</h2>
-        <p id= "typing-text"> Saya adalah seorang mahasiswa Teknologi Informasi universitas lampung dengan minat dalam pengembangan web, manajemen server, dan optimasi WordPress hosting. Saya memiliki pengalaman dalam membangun dan mengelola situs web menggunakan berbagai teknologi, serta memahami spesifikasi terbaik untuk hosting WordPress agar dapat memberikan performa optimal.</p>
+        <h2>Kelas: 2024B</h2>
+        <p id="typing-text">Saya adalah seorang mahasiswa Teknologi Informasi Universitas Lampung dengan minat dalam pengembangan web, manajemen server, dan optimasi WordPress hosting. Saya memiliki pengalaman dalam membangun dan mengelola situs web menggunakan berbagai teknologi, serta memahami spesifikasi terbaik untuk hosting WordPress agar dapat memberikan performa optimal.</p>
         <script>
-    document.addEventListener("DOMContentLoaded", function () {
-        const textElement = document.getElementById("typing-text");
-        const text = "Saya adalah seorang mahasiswa Teknologi Informasi Universitas Lampung dengan minat dalam pengembangan web, manajemen server, dan optimasi WordPress hosting.Saya memiliki pengalaman dalam membangun dan mengelola situs web menggunakan berbagai teknologi, serta memahami spesifikasi terbaik untuk hosting WordPress agar dapat memberikan performa optimal.";
-        let index = 0;
+            document.addEventListener("DOMContentLoaded", function () {
+                const textElement = document.getElementById("typing-text");
+                const text = "Saya adalah seorang mahasiswa Teknologi Informasi Universitas Lampung dengan minat dalam pengembangan web, manajemen server, dan optimasi WordPress hosting. Saya memiliki pengalaman dalam membangun dan mengelola situs web menggunakan berbagai teknologi, serta memahami spesifikasi terbaik untuk hosting WordPress agar dapat memberikan performa optimal.";
+                let index = 0;
 
-        function typeText() {
-            if (index < text.length) {
-                textElement.innerHTML += text.charAt(index);
-                index++;
-                setTimeout(typeText, 100); // Kecepatan ketikan (50ms per huruf)
-            }
-        }
+                function typeText() {
+                    if (index < text.length) {
+                        textElement.innerHTML += text.charAt(index);
+                        index++;
+                        setTimeout(typeText, 100); // Kecepatan ketikan (100ms per huruf)
+                    }
+                }
 
-        textElement.innerHTML = ""; // Kosongkan teks awal
-        typeText(); // Mulai mengetik
-    });
-</script>
-
+                textElement.innerHTML = ""; // Kosongkan teks awal
+                typeText(); // Mulai mengetik
+            });
+        </script>
     </section>
 
-    <section id="projects" class = "center-text">
-        <h2 class = "center-text">Proyek Saya</h2>
-        <div class="project">
-            <h3> Tugas 1 </h3>
-            <a href="https://youtu.be/fWKmzuqaC9Q?si=KhsHEhtacfh1suqB">Presentasi mengenai Tokoh yg berperan dalam printis Grafika Komputer </a>
-        </div>
-        <div class="project">
-            <h3>Tugas 2</h3>
-            <a href="https://wa.me/qr/H7HMP3RBQZQ2N1">Membuat Algoritma Garis DDA dan Garis Bresenham</a>
-        </div>
-        <div class="project">
-            <h3>Tugas 3</h3>
-           <a  href="https://youtu.be/WqfvleBwEoA?si=swv0--eSaprsR_eB">Membuat Algoritma Lingkaran Bresenham</a>
-       </div>
+    <section id="projects">
+        <h2 class="center-text">Proyek Saya</h2>
+        <div class="project-container">
             <div class="project">
-            <h3>Tugas 4</h3>
-           <a  href="https://youtu.be/WqfvleBwEoA?si=swv0--eSaprsR_eB">Membuat Algoritma Lingkaran Bresenham</a>
-       </div>
-         <div class="project">
+                <h3>Tugas 1</h3>
+                <a href="https://youtu.be/fWKmzuqaC9Q?si=KhsHEhtacfh1suqB">TOkoh yang berperan dalam Grafika-Komputer</a>
+            </div>
+            <div class="project">
+                <h3>Tugas 2</h3>
+                <a href="https://wa.me/qr/H7HMP3RBQZQ2N1">Membuat Algoritma Garis DDA dan Garis Bresenham</a>
+            </div>
+            <div class="project">
+                <h3>Tugas 3</h3>
+                <a href="https://youtu.be/WqfvleBwEoA?si=swv0--eSaprsR_eB">Membuat Algoritma Lingkaran Bresenham</a>
+            </div>
+            <div class="project">
+                <h3>Tugas 4</h3>
+                <a href="https://youtu.be/IYni-ZesizE?si=LdwLdH2zohRtw765">Membuat Algoritma kurva</a>
+            </div>
+            <div class="project">
             <h3>Tugas 5</h3>
-           <a  href="https://youtu.be/IYni-ZesizE?si=LdwLdH2zohRtw765">Membuat Algoritma Kurva</a>
-       </div>
-       </li>
-       <style>
-    .project {
-        border: 1px solid black;
-        padding: 10px;
-        margin: 10px 0;
-        border-radius: 5px;
-        text-align: center;
-    }
-
-    
-</style>
-
+           <a  href="file:///F:/KULIAH%20UNILA/SEMSTER%202/Grafika%20Komputer/hosting/persamaan/persamaan%20kuadrat.html">Membuat Algoritma persamaan Kuadrat</a>
+            </div>
+            <div class="project">
+            <h3>Tugas 6</h3>
+           <a  href="https://youtu.be/fH0UvMMWGCc?si=OGKYNCqaNBGK41er">Kuis Transformasi 2D</a>
+            </div>
+            <div class="project">
+            <h3>Tugas 7</h3>
+           <a  href="https://youtu.be/yO7J3mb89cs?si=WX0Dvqf-Bf8fveHV">Membuat Algoritma Cohen clipping  </a>
+            </div>
+            <div class="project">
+            <h3>Tugas 8</h3>
+           <a  href="https://youtu.be/l_oUJsFLowA?si=AD1h-k-YNBQrJP0v">Membahas tentang polygon Clipping</a>
+            </div>
+        </div>
         </div>
     </section>
 
@@ -97,7 +118,7 @@
     </section>
 
     <footer>
-        <p>&copy; 2024 Muhamad Yasir. no copyright</p>
+        <p>copyright &copy; 2024 by Muhamad Yasir</p>
     </footer>
 
     <script src="script.js"></script>
